@@ -7,7 +7,7 @@ export default function AboutPage() {
       <div>
         <img
           src='/profilePic.webp'
-          width='250px'
+          style={{borderRadius: '34% 66% 64% 36% / 37% 39% 61% 63%', width: '250px'}}
           alt='Andrés profile picture'
         />
         <p>Hi! I&apos;m Andrés, and I&apos;m creating a React Router clone.</p>
