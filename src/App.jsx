@@ -1,11 +1,10 @@
 import { useEffect, useState } from 'react'
-
-const NAVIGATION_EVENT = 'pushstate'
+import { EVENTS } from './consts'
 
 function navigate(href) {
   window.history.pushState({}, '', href) // Updates the url without reloading the page.
   // Personalized event that makes the browser tell us when url changes:
-  const navigationEvent = new Event(NAVIGATION_EVENT) // There's no native way of listening for a forward navigation event (although there is for backwards navigation).
+  const navigationEvent = new Event(EVENTS.PUSHSTATE) // There's no native way of listening for a forward navigation event (although there is for backwards navigation).
   window.dispatchEvent(navigationEvent)
 }
 
@@ -44,10 +43,12 @@ function App() {
       setCurrentPath(window.location.pathname)
     }
 
-    window.addEventListener(NAVIGATION_EVENT, onLocationChange)
+    window.addEventListener(EVENTS.PUSHSTATE, onLocationChange)
+    window.addEventListener(EVENTS.POPSTATE, onLocationChange)
 
     return () => {
-      window.removeEventListener(NAVIGATION_EVENT, onLocationChange)
+      window.removeEventListener(EVENTS.PUSHSTATE, onLocationChange)
+      window.removeEventListener(EVENTS.POPSTATE, onLocationChange)
     }
   }, [])
 
