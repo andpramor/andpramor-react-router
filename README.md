@@ -19,7 +19,7 @@ In this project, I’m building a **custom React Router** from the ground up! Th
 
 - [x] SPA navigation
 - [X] Back/Forward button support
-- [ ] Declarative `<Link />` component
+- [x] Declarative `<Link />` component
 - [ ] Declarative `<Router />` component
 - [ ] Default route (404 handling)
 - [ ] Route parameters
