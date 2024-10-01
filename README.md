@@ -1,8 +1,14 @@
-# React + Vite
+# React router from scratch
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+In this project I'll attempt to make my own React Router library. I'll beging making a web as is and then separate the routing logic to make an installable package with it and publish it to NPM.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [ ] Create a way to make SPAs.
+- [ ] Ability to navigate through pages using the back button.
+- [ ] Create a declarative "Link" component.
+- [ ] Create a declarative "Router" component.
+- [ ] Support a default rout (404).
+- [ ] Support route parameters.
+- [ ] Create a declarative "Route" component.
+- [ ] Lazy Loading for routes.
+- [ ] Testing.
+- [ ] Publish the package to NPM.
