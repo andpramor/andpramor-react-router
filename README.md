@@ -4,12 +4,12 @@ In this project, I’m building a **custom React Router** from the ground up! Th
 
 ## 🌟 Features
 
-- **Single Page Application (SPA) Navigation**: Achieve seamless page transitions without reloading the page, giving your app that dynamic feel.
+- **Single Page Application (SPA) Navigation**: Achieve seamless page transitions without reloading the page, giving your app a dynamic feel.
 - **Back/Forward Navigation**: Enable navigation through browser history (back/forward buttons), offering a user-friendly experience.
 - **Declarative `<Link />` Component**: Easily link to other pages within the app with a simple `<Link>` component, similar to how React Router works.
 - **Declarative `<Router />` Component**: Define routes declaratively, making routing intuitive and easy to manage within your app.
 - **404 Handling (Default Route)**: Automatically direct users to a 404 page or a default route when a page is not found.
-- **Route Parameters**: Pass dynamic data through the URL, allowing for flexible routing patterns (e.g., `/user/:id`).
+- **Route Parameters**: Pass dynamic data through the URL, allowing for flexible routing patterns (e.g.: `/user/:id`).
 - **Declarative `<Route />` Component**: Define specific routes for each page in your app, controlling which components should render based on the URL.
 - **Lazy Loading for Routes**: Boost performance by loading route components lazily, only when they’re needed.
 - **Testing**: Ensure the router behaves as expected with thorough testing for all edge cases.
