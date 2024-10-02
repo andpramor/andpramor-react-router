@@ -24,6 +24,7 @@ function App() {
   return (
     <>
       <main>
+        <div style={{width: '100%', height: '10px', backgroundColor: '#09F'}} />
         {currentPath === '/' && <HomePage />}
         {currentPath === '/about' && <AboutPage />}
       </main>
