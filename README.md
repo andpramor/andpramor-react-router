@@ -22,7 +22,7 @@ In this project, I’m building a **custom React Router** from the ground up! Th
 - [x] Declarative `<Link />` component
 - [x] Declarative `<Router />` component
 - [x] Default route (404 handling)
-- [ ] Route parameters
+- [x] Dynamic route parameters
 - [ ] Declarative `<Route />` component
 - [ ] Lazy loading for routes
 - [ ] Testing and test coverage

@@ -3,6 +3,7 @@ import ContactPage from './pages/Contact.jsx'
 import Page404 from './pages/404.jsx'
 
 import { Router } from './Router.jsx'
+import SearchPage from './pages/Search.jsx'
 
 const appRoutes = [
   {
@@ -12,6 +13,10 @@ const appRoutes = [
   {
     path: '/contact',
     Component: ContactPage
+  },
+  {
+    path: '/search/:query',
+    Component: SearchPage
   }
 ]
 

@@ -15,6 +15,7 @@ export default function HomePage() {
         />
         <p>Hi, I&apos;m Andrés Prado, and I&apos;m creating a React Router from scratch!</p>
         <Link to='/contact'>Contact</Link>
+        <p>For a demo of dynamic routes handling, try using this site&apos;s url <code>/search/{`<your_search>`}</code></p>
       </div>
     </>
   )
