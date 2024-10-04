@@ -3,20 +3,22 @@ import { Link } from '../Link.jsx'
 export default function HomePage() {
   return (
     <>
-      <h1>Home</h1>
-      <div>
-        <img
-          src='/profilePic.webp'
-          style={{
-            borderRadius: '34% 66% 64% 36% / 37% 39% 61% 63%',
-            width: '250px'
-          }}
-          alt='Andrés profile picture'
-        />
-        <p>Hi, I&apos;m Andrés Prado, and I&apos;m creating a React Router from scratch!</p>
-        <Link to='/contact'>Contact</Link>
-        <p>For a demo of dynamic routes handling, try using this site&apos;s url <code>/search/{`<your_search>`}</code></p>
-      </div>
+      <img
+        src='/profilePic.webp'
+        style={{
+          borderRadius: '34% 66% 64% 36% / 37% 39% 61% 63%',
+          width: '250px',
+          marginTop: '1rem'
+        }}
+        alt='Andrés profile picture'
+      />
+      <h1>Hi, I&apos;m Andrés Prado</h1>
+      <p>And I&apos;m creating a React router from scratch!</p>
+      <Link to='/contact'>Contact</Link>
+      <p>
+        For a demo of dynamic routes handling, try using this site&apos;s url plus{' '}
+        <code>/search/{`<your_search>`}</code>
+      </p>
     </>
   )
 }
