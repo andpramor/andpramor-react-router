@@ -9,7 +9,7 @@ export function navigate(href) {
 
 export function Link({ target, to, ...props }) {
   const handleClick = (event) => {
-    const isMainEvent = event.button === BUTTONS.PRIMARY // Primary click (default: left click)
+    const isMainEvent = event.button === BUTTONS.PRIMARY // Primary click (default: left click).
     const isModifiedEvent =
       event.metaKey || event.altKey || event.ctrlKey || event.shiftKey
     const isManageableEvent = target === undefined || target === '_self'
