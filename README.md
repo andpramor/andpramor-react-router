@@ -1,6 +1,6 @@
 # 🚀 React Router From Scratch
 
-In this project, I’m building a **custom React Router** from the ground up! The goal is to create a full-fledged routing system that powers Single Page Applications (SPAs) with smooth navigation, just like popular routers. Once complete, the router will be extracted into an installable package and published to **NPM**.
+In this project, I’m building a **custom React router** from the ground up! The goal is to create a full-fledged routing system that powers Single Page Applications (SPAs) with smooth navigation, just like popular routers. Once complete, the router will be extracted into an installable package and published to **NPM**.
 
 ## 🌟 Features
 
