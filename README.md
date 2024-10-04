@@ -12,6 +12,7 @@ In this project, I’m building a **custom React Router** from the ground up! Th
 - **Route Parameters**: Pass dynamic data through the URL, allowing for flexible routing patterns (e.g.: `/user/:id`).
 - **Declarative `<Route />` Component**: Define specific routes for each page in your app, controlling which components should render based on the URL.
 - **Lazy Loading for Routes**: Boost performance by loading route components lazily, only when they’re needed.
+- **Internationalization (i18n)**: Support multiple languages and localization, allowing routes to adapt based on the user's language preferences or region.
 - **Testing**: Ensure the router behaves as expected with thorough testing for all edge cases.
 - **Publish to NPM**: Package the router and share it with the community by publishing it to **NPM**.
 
@@ -25,7 +26,8 @@ In this project, I’m building a **custom React Router** from the ground up! Th
 - [x] Dynamic route parameters
 - [x] Declarative `<Route />` component
 - [ ] Lazy loading for routes
-- [ ] Testing and test coverage
+- [ ] i18n
+- [ ] Testing
 - [ ] Publish to NPM
 
 ## 📦 Installation (Planned)
