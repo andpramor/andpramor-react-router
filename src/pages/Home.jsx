@@ -3,7 +3,7 @@ import { Link } from '../Link.jsx'
 const i18n = {
   es: {
     title: 'Hola, soy Andrés Prado',
-    subtitle: '¡Y estoy creando un React router desde cero!',
+    subtitle: '¡Y he hecho un router con React desde cero!',
     dynamic_routes_info:
       'Para una demo de gestión de rutas dinámicas, prueba a usar la url de este sitio seguida de ',
     contact_link: 'Contacto',
@@ -11,7 +11,7 @@ const i18n = {
   },
   en: {
     title: "Hi, I'm Andrés Prado",
-    subtitle: "And I'm creating a React router from scratch!",
+    subtitle: "And I built a React router from scratch!",
     dynamic_routes_info:
       "For a demo of dynamic routes handling, try using this site's url plus ",
     contact_link: 'Contact',

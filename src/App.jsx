@@ -8,6 +8,8 @@ const LazyContactPage = lazy(() => import('./pages/Contact.jsx')) // Dynamic imp
 import SearchPage from './pages/Search.jsx'
 import Page404 from './pages/404.jsx'
 
+import { Footer } from './Footer/Footer.jsx'
+
 const appRoutes = [
   {
     path: '/:lang',
@@ -36,6 +38,7 @@ function App() {
           style={{ width: '100%', height: '10px', backgroundColor: '#09F' }}
         />
       </main>
+      <Footer />
     </>
   )
 }
