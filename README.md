@@ -25,8 +25,8 @@ In this project, I’m building a **custom React router** from the ground up! Th
 - [x] Default route (404 handling)
 - [x] Dynamic route parameters
 - [x] Declarative `<Route />` component
-- [ ] Lazy loading for routes
-- [ ] i18n
+- [x] Lazy loading for routes
+- [x] i18n
 - [ ] Testing
 - [ ] Publish to NPM
 

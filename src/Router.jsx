@@ -33,7 +33,7 @@ export function Router({
     return isRoute ? props : null
   })
 
-  const allRoutes = routes.concat(routesFromChildren)
+  const allRoutes = routesFromChildren.concat(routes)
 
   const Page = allRoutes.find(({ path }) => {
     if (path === currentPath) return true
