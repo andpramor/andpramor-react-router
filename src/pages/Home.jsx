@@ -1,4 +1,5 @@
 import { Link } from '../Link.jsx'
+import profile_pic from '../assets/profilePic.webp'
 
 const i18n = {
   es: {
@@ -13,7 +14,7 @@ const i18n = {
     title: "Hi, I'm Andrés Prado",
     subtitle: 'And I built a React router from scratch!',
     dynamic_routes_info:
-      "For a demo of dynamic routes handling, try using this site's url plus ",
+      "For a demo of dynamic routes handling (only in dev mode ), try using this site's url plus ",
     contact_link: 'Contact',
     lang_link: 'Home en español'
   }
@@ -29,7 +30,7 @@ export default function HomePage({ routeParams }) {
   return (
     <>
       <img
-        src='./profilePic.webp'
+        src={profile_pic}
         style={{
           borderRadius: '34% 66% 64% 36% / 37% 39% 61% 63%',
           width: '200px',
@@ -39,12 +40,12 @@ export default function HomePage({ routeParams }) {
       />
       <h1>{i18n.title}</h1>
       <p>{i18n.subtitle}</p>
-      <Link to='/andpramor-react-router/contact'>{i18n.contact_link}</Link>
+      <Link to='/contact'>{i18n.contact_link}</Link>
       <p>
         {i18n.dynamic_routes_info}
         <code>/search/{`<your_search>`}</code>
       </p>
-      <Link to={`/andpramor-react-router/${routeParams.lang === 'es' ? 'en' : 'es'}`}>{i18n.lang_link}</Link>
+      <Link to={`/${routeParams.lang === 'es' ? 'en' : 'es'}`}>{i18n.lang_link}</Link>
     </>
   )
 }

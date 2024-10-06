@@ -6,3 +6,5 @@ export const EVENTS = {
 export const BUTTONS = {
   PRIMARY: 0 // The default is the left click
 }
+
+export const basePath = '/andpramor-react-router'
