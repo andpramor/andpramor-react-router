@@ -4,7 +4,7 @@ export default function ContactPage() {
   return (
     <>
       <h1>Contact</h1>
-      <p style={{ display: 'flex', flexDirection: 'column', gap: '1rem', paddingLeft: '1rem' }}>
+      <p style={{ display: 'flex', flexDirection: 'column', gap: '1rem', padding: '1rem' }}>
         <a href='mailto:andres@andrespradomorgaz.com'>
           andres@andrespradomorgaz.com
         </a>
