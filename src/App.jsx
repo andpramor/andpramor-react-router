@@ -12,11 +12,11 @@ import { Footer } from './Footer/Footer.jsx'
 
 const appRoutes = [
   {
-    path: '/:lang',
+    path: '/andpramor-react-router/:lang',
     Component: HomePage
   },
   {
-    path: '/search/:query',
+    path: '/andpramor-react-router/search/:query',
     Component: SearchPage
   }
 ]
@@ -30,8 +30,8 @@ function App() {
         />
         <Suspense fallback={<div>Loading...</div>}>
           <Router routes={appRoutes} defaultComponent={Page404}>
-            <Route path='/' Component={HomePage} />
-            <Route path='/contact' Component={LazyContactPage} />
+            <Route path='/andpramor-react-router/' Component={HomePage} />
+            <Route path='/andpramor-react-router/contact' Component={LazyContactPage} />
           </Router>
         </Suspense>
         <div

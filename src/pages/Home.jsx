@@ -11,7 +11,7 @@ const i18n = {
   },
   en: {
     title: "Hi, I'm Andrés Prado",
-    subtitle: "And I built a React router from scratch!",
+    subtitle: 'And I built a React router from scratch!',
     dynamic_routes_info:
       "For a demo of dynamic routes handling, try using this site's url plus ",
     contact_link: 'Contact',
@@ -29,7 +29,7 @@ export default function HomePage({ routeParams }) {
   return (
     <>
       <img
-        src='/profilePic.webp'
+        src='./profilePic.webp'
         style={{
           borderRadius: '34% 66% 64% 36% / 37% 39% 61% 63%',
           width: '200px',
@@ -39,7 +39,7 @@ export default function HomePage({ routeParams }) {
       />
       <h1>{i18n.title}</h1>
       <p>{i18n.subtitle}</p>
-      <Link to='/contact'>{i18n.contact_link}</Link>
+      <Link to='/andpramor-react-router/contact'>{i18n.contact_link}</Link>
       <p>
         {i18n.dynamic_routes_info}
         <code>/search/{`<your_search>`}</code>
