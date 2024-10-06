@@ -2,6 +2,7 @@ import { useState, useEffect, Children } from 'react'
 import { EVENTS } from './utils/consts'
 import { match } from 'path-to-regexp'
 import { getCurrentPath } from './utils/getCurrentPath'
+import { Route } from './Route'
 
 export function Router({
   children,
@@ -28,11 +29,7 @@ export function Router({
 
   // Add routes from children
   const routesFromChildren = Children.map(children, ({ props, type }) => {
-    const { name } = type
-
-    const isRoute = name === 'Route'
-    console.log({props, type})
-    return isRoute ? props : null
+    return type === Route ? props : null
   })
 
   const allRoutes = routesFromChildren ? routesFromChildren.concat(routes).filter(Boolean) : routes
