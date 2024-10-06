@@ -26,16 +26,27 @@ function App() {
     <>
       <main>
         <div
-          style={{ width: '100%', height: '10px', backgroundColor: '#09F', margin: '1rem 0' }}
+          style={{
+            width: '100%',
+            height: '10px',
+            backgroundColor: '#09F',
+            margin: '1rem 0'
+          }}
         />
         <Suspense fallback={<div>Loading...</div>}>
           <Router routes={appRoutes} defaultComponent={Page404}>
+            <Route path='' Component={HomePage} />
             <Route path='/' Component={HomePage} />
             <Route path='/contact' Component={LazyContactPage} />
           </Router>
         </Suspense>
         <div
-          style={{ width: '100%', height: '10px', backgroundColor: '#09F', margin: '1rem 0' }}
+          style={{
+            width: '100%',
+            height: '10px',
+            backgroundColor: '#09F',
+            margin: '1rem 0'
+          }}
         />
       </main>
       <Footer />

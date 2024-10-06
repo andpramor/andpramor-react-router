@@ -35,6 +35,7 @@ export function Router({
   })
 
   const allRoutes = routesFromChildren ? routesFromChildren.concat(routes).filter(Boolean) : routes
+  console.log(allRoutes)
 
   const Page = allRoutes.find(({ path }) => {
     if (path === currentPath) return true
