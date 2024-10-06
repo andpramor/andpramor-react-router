@@ -30,7 +30,7 @@ function App() {
         />
         <Suspense fallback={<div>Loading...</div>}>
           <Router routes={appRoutes} defaultComponent={Page404}>
-            <Route path='/andpramor-react-router/' Component={HomePage} />
+            <Route path='/andpramor-react-router' Component={HomePage} />
             <Route path='/andpramor-react-router/contact' Component={LazyContactPage} />
           </Router>
         </Suspense>

@@ -44,7 +44,7 @@ export default function HomePage({ routeParams }) {
         {i18n.dynamic_routes_info}
         <code>/search/{`<your_search>`}</code>
       </p>
-      <Link to={routeParams.lang === 'es' ? 'en' : 'es'}>{i18n.lang_link}</Link>
+      <Link to={`/andpramor-react-router/${routeParams.lang === 'es' ? 'en' : 'es'}`}>{i18n.lang_link}</Link>
     </>
   )
 }

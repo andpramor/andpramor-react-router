@@ -10,7 +10,7 @@ export default function SearchPage({ routeParams }) {
     <>
       <h1>Search Engine</h1>
       <p>You looked for {routeParams.query}</p>
-      <Link to='/andpramor-react-router/'>Back to Home</Link>
+      <Link to='/andpramor-react-router'>Back to Home</Link>
     </>
   )
 }

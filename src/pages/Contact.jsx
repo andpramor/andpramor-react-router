@@ -11,7 +11,7 @@ export default function ContactPage() {
         <a href='https://www.linkedin.com/in/apradomorgaz/'>LinkedIn</a>
         <span>Check my <a href='https://andrespradomorgaz.com'>portfolio</a>!</span>
       </p>
-      <Link to='/andpramor-react-router/'>Back Home</Link>
+      <Link to='/andpramor-react-router'>Back Home</Link>
     </>
   )
 }
