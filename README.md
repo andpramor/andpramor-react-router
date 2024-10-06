@@ -18,7 +18,8 @@ In this project, I’m built a **custom React router** from the ground up! It's 
 ## 🔗 Demo
 You can check out a demo project built using this router <a href="https://andrespradomorgaz.com/andpramor-react-router">here</a>.
 
-### The demo project also includes
+<strong>The demo project also includes</strong>
+
 - **Internationalization (i18n)**: Supports multiple languages and localization, allowing pages to adapt based on the user's language as determined by the active route. This feature demonstrates the use of route parameters but is not directly related to the router itself and is not included in the NPM package.
 
 ## 🛠️ Roadmap
