@@ -2,7 +2,6 @@ import { lazy, Suspense } from 'react'
 
 import { Router } from './Router.jsx'
 import { Route } from './Route.jsx'
-import { Link } from './Link.jsx'
 
 import HomePage from './pages/Home.jsx'
 const LazyContactPage = lazy(() => import('./pages/Contact.jsx')) // Dynamic imports (lazy loading)
@@ -18,10 +17,6 @@ const appRoutes = [
   },
   {
     path: '/',
-    Component: HomePage
-  },
-  {
-    path: '/:lang',
     Component: HomePage
   },
   {
@@ -45,9 +40,9 @@ function App() {
         <Suspense fallback={<div>Loading...</div>}>
           <Router routes={appRoutes} defaultComponent={Page404}>
             <Route path='/contact' Component={LazyContactPage} />
+            <Route path='/:lang' Component={HomePage} />
           </Router>
         </Suspense>
-        <Link to='/contact'>contact</Link>
         <div
           style={{
             width: '100%',

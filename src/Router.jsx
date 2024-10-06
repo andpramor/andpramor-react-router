@@ -31,11 +31,11 @@ export function Router({
     const { name } = type
 
     const isRoute = name === 'Route'
+    console.log({props, type})
     return isRoute ? props : null
   })
 
   const allRoutes = routesFromChildren ? routesFromChildren.concat(routes).filter(Boolean) : routes
-  console.log(allRoutes)
 
   const Page = allRoutes.find(({ path }) => {
     if (path === currentPath) return true
