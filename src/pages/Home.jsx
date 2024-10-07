@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link } from '../Link.jsx'
+import { Link } from '../components/Link.jsx'
 import profile_pic from '../assets/profilePic.webp'
 import { navigate } from '../utils/navigate.js'
 

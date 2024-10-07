@@ -1,7 +1,7 @@
 import { lazy, Suspense } from 'react'
 
-import { Router } from './Router.jsx'
-import { Route } from './Route.jsx'
+import { Router } from './components/Router.jsx'
+import { Route } from './components/Route.jsx'
 
 import HomePage from './pages/Home.jsx'
 const LazyContactPage = lazy(() => import('./pages/Contact.jsx')) // Dynamic imports (lazy loading)

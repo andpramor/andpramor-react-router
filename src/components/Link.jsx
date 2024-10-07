@@ -1,6 +1,6 @@
-import { BUTTONS } from './utils/consts.js'
+import { BUTTONS } from '../utils/consts.js'
 
-import { navigate } from './utils/navigate.js'
+import { navigate } from '../utils/navigate.js'
 
 export function Link({ target, to, ...props }) {
   const handleClick = (event) => {

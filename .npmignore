@@ -1,0 +1,11 @@
+docs
+src
+.gitignore
+.prettierrc
+.swcrc
+eslint.config.js
+favicon.svg
+index.html
+package-lock.json
+pnpm-lock.yaml
+vite.config.js
